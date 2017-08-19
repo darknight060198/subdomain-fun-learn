@@ -1,15 +1,37 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-<title>Fun Learn</title>
-</head>
-<body>
+	<head>
+		<title> RANDOM </title>
+		
+	</head>
+	
+	<body>
+	
+	<p id="generatetext"> CLICK THE BUTTON TO GENERATE <p>
+	
+	
+		<script type="text/javascript">
+		
+		function random() {
+			var random_boolean = Math.random() >= 0.5;
+			var res = Math.floor((Math.random() * 1660) + 100);
+			var res1 = Math.floor((Math.random() * 3240) + 10000);
+			
+			if (random_boolean) {
+				document.getElementById("generatetext").innerHTML = "Result : " + res;
+			} else {
+				document.getElementById("generatetext").innerHTML = "Result : " + res1;
+			}
+		}
+		
+		</script>
+		
+		<form>
+		
+			<input type="button" value="GENERATE" onclick="random()"
+	
+		</form>
+	</body>
 
-<h1>HAHAHAHAHAHAHA</h1>
-
-<img src="https://firebasestorage.googleapis.com/v0/b/fun-learn-652b6.appspot.com/o/asdfasdfasdfasdf.jpg?alt=media&token=46b8561a-3d2e-4e83-a96e-dc7465b73bac" alt="HAHAHA">
-
-<h2>HAHAHAHAHAHA</h2>
-
-</body>
 </html>
